@@ -16,7 +16,8 @@ RUN apt-get -y update \
 
 RUN docker-php-ext-install mysqli
 
-RUN a2enmod rewrite
+RUN a2enmod
+RUN rewrite
 
 VOLUME [ "/var/www/html" ]
 
